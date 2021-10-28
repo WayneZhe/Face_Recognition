@@ -28,17 +28,17 @@ public class FaceRegisterImp implements FaceRegister {
             int error_code = result.getInt("error_code");
             if (error_code == 0){//注册成功
                 message.setStart(true);
-                message.setMsg("注册成功");
+                message.setMsg("Registration success");
             }else if (error_code==222202){
                 message.setStart(false);
-                message.setErrorMsg("请将脸部对准摄像头");
+                message.setErrorMsg("Please put your face in front of the camera");
             }else {
                 message.setStart(false);
-                message.setErrorMsg("错误代码"+result.getInt("error_code"));
+                message.setErrorMsg("Error code"+result.getInt("error_code"));
             }
         }else {
             message.setStart(false);
-            message.setErrorMsg("人脸数据已经被注册");
+            message.setErrorMsg("The face data has already registerred");
         }
         return message;
     }

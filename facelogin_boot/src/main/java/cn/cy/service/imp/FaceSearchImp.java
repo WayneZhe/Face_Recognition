@@ -31,13 +31,13 @@ public class FaceSearchImp implements FaceSearch {
             }else {
                 Result result = new Result();
                 result.setStart(false);
-                result.setErrorMsg("匹配不成功");
+                result.setErrorMsg("Face match failed");
                 return result;
             }
         }else {
             Result result = new Result();
             result.setStart(false);
-            result.setErrorMsg("人脸不合格");
+            result.setErrorMsg("Invalid Face");
             return result;
         }
     }
@@ -58,16 +58,16 @@ public class FaceSearchImp implements FaceSearch {
             if (faceNum==1 && faceProbability > 0.8){//登录的人唯一，是人的准确率0.8以上
                 message.setStart(true);
                 message.setFaceNum(faceNum);
-                message.setMsg("成功");
+                message.setMsg("Success");
             }else {
                 message.setStart(false);
                 message.setFaceNum(faceNum);
-                message.setErrorMsg("图片不能满足登录要求");
+                message.setErrorMsg("The face picture does not meet the login requirement");
             }
         }else {
             message.setStart(false);
             message.setFaceNum(0);
-            message.setErrorMsg("匹配库不成功");
+            message.setErrorMsg("Face library match failure");
         }
         return message;
     }
@@ -86,15 +86,15 @@ public class FaceSearchImp implements FaceSearch {
             String userId = user.getString("user_id");
             if (score > 80){//匹配相似度80以上
                 message.setStart(true);
-                message.setMsg("成功");
+                message.setMsg("Success");
                 message.setUserId(userId);
             }else {
                 message.setStart(false);
-                message.setErrorMsg("相似度过低");
+                message.setErrorMsg("Face similarity too low");
             }
         }else {
             message.setStart(false);
-            message.setErrorMsg("人脸库查询不成功");
+            message.setErrorMsg("Face library query failed");
         }
         return message;
     }
