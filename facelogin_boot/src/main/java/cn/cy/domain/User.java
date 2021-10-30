@@ -1,11 +1,12 @@
 package cn.cy.domain;
 
 import lombok.Data;
-
 @Data
 public class User {
     private String userId;
     private String pwd;
+    private UserInfo info;
+    private String GPS;
 
     public String getUserId() {
         return userId;
@@ -22,4 +23,20 @@ public class User {
     public void setPwd(String pwd) {
         this.pwd = pwd;
     }
+
+    public boolean isVaccination() {
+        if (info == null) return false;
+        return this.getInfo().isVaccination();
+    }
+
+
+    public void ViewFlowDistribution(){
+
+    }
+
+    public void ViewBuildingCapacity(){
+
+    }
+
+
 }

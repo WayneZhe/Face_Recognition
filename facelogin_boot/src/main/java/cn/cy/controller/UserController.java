@@ -38,4 +38,14 @@ public class UserController {
         Result result = faceRegister.register(image);
         return result;
     }
+
+    public void SignIn() {
+
+        //location people += 1
+    }
+
+    public void SignOut() {
+        //location people -= 1
+        //display sign-out page(current time, name of user, location name)
+    }
 }

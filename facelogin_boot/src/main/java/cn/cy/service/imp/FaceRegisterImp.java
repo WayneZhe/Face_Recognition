@@ -38,7 +38,7 @@ public class FaceRegisterImp implements FaceRegister {
             }
         }else {
             message.setStart(false);
-            message.setErrorMsg("The face data has already registerred");
+            message.setErrorMsg("The face data has already registered");
         }
         return message;
     }
