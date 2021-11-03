@@ -12,13 +12,22 @@
     <button id="change-gradient">Change gradient</button>
     <button id="change-radius">Change radius</button>
     <button id="change-opacity">Change opacity</button>
+    <button id="refresh" onclick="myrefresh()">Refresh</button>
 </div>
 <div id="map"></div>
-<script>
-    function update() {
-        setInterval(map, 5000);
+<!--<script>-->
+<!--    function update() {-->
+<!--        setInterval(map, 5000);-->
+<!--    }-->
+<!--</script>-->
+<script language="JavaScript">
+    function myrefresh()
+    {
+        window.location.reload();
     }
+    //setTimeout('myrefresh()',10000); //指定1秒刷新一次
 </script>
+
 
 <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 <script

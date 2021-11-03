@@ -84,11 +84,23 @@ function randomNormalDistribution(){
 function getPoints() {
     let points = [];
     for(let i = 0; i < 500; i++) {
-        let x = getNumberInNormalDistribution(33885, 1) * -1.0 / 1000;
-        let y = getNumberInNormalDistribution(151187, 1) * 1.0 / 1000;
+        let x = getNumberInNormalDistribution(33886, 1) * -1.0 / 1000;
+        let y = getNumberInNormalDistribution(151188, 1) * 1.0 / 1000;
         points.push(new google.maps.LatLng(x, y));
-        x = getNumberInNormalDistribution(338865, 2) * -1.0 / 10000;
-        y = getNumberInNormalDistribution(1511885, 2) * 1.0 / 10000;
+        x = getNumberInNormalDistribution(338871, 5) * -1.0 / 10000;
+        y = getNumberInNormalDistribution(1511891, 5) * 1.0 / 10000;
+        points.push(new google.maps.LatLng(x, y));
+        x = getNumberInNormalDistribution(33888, 1) * -1.0 / 1000;
+        y = getNumberInNormalDistribution(151190, 1) * 1.0 / 1000;
+        points.push(new google.maps.LatLng(x, y));
+        x = getNumberInNormalDistribution(338894, 5) * -1.0 / 10000;
+        y = getNumberInNormalDistribution(151191, 1) * 1.0 / 1000;
+        points.push(new google.maps.LatLng(x, y));
+        x = getNumberInNormalDistribution(338895, 5) * -1.0 / 10000;
+        y = getNumberInNormalDistribution(151191, 1) * 1.0 / 1000;
+        points.push(new google.maps.LatLng(x, y));
+        x = getNumberInNormalDistribution(338896, 5) * -1.0 / 10000;
+        y = getNumberInNormalDistribution(151193, 1) * 1.0 / 1000;
         points.push(new google.maps.LatLng(x, y));
     }
     return points;
