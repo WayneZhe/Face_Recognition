@@ -103,19 +103,14 @@
                                                     </div>
                                                     <div class="col-lg-8">
                                                         <div class="user-profile-name">John Doe</div>
-                                                        <div class="user-Location"><i class="ti-location-pin"></i> Sydney</div>
                                                         <div class="custom-tab user-profile-tab">
                                                             <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active" id="1">
+                                                                <div role="tabpanel" class="tab-pane active">
                                                                     <div class="contact-information">
                                                                         <h2>Information</h2>
-                                                                        <div class="vaccination-content">
-                                                                            <span class="contact-title">Vaccinated:</span>
-                                                                            <span class="vaccination">Yes </span>
-                                                                        </div>
-                                                                        <div class="gender-content">
-                                                                            <span class="contact-title">Gender:</span>
-                                                                            <span class="gender">Male</span>
+                                                                        <div class="identity-content">
+                                                                            <span class="contact-title">Identity:</span>
+                                                                            <span class="identity">Student</span>
                                                                         </div>
                                                                         <div class="phone-content">
                                                                             <span class="contact-title">Phone:</span>
@@ -125,9 +120,9 @@
                                                                             <span class="contact-title">Address:</span>
                                                                             <span class="mail-address">123, Rajar Goli, South Mugda</span>
                                                                         </div>
-                                                                        <div class="email-content">
-                                                                            <span class="contact-title">Email:</span>
-                                                                            <span class="contact-email">hello@htmlcooker.com</span>
+                                                                        <div class="vaccination-content">
+                                                                            <span class="contact-title">Vaccinated:</span>
+                                                                            <span class="vaccination">Yes </span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -176,24 +171,27 @@
                                                                     <div class="contact-information">
                                                                         <h2>Application</h2>
                                                                         <div>
-                                                                            <span class="contact-title">Name:</span>
-                                                                            <input type="text">
-                                                                        </div>
-                                                                        <div>
-                                                                            <span class="contact-title">Phone:</span>
-                                                                            <input type="text">
-                                                                        </div>
-                                                                        <div>
-                                                                            <span class="contact-title">Address:</span>
-                                                                            <input type="text">
-                                                                        </div>
-                                                                        <div>
-                                                                            <span class="contact-title">Vaccination:</span>
-                                                                            <input type="text">
-                                                                        </div>
-                                                                        <div>
-                                                                            <button>Submit</button>
-                                                                            <button>Cancel</button>
+                                                                            <div>
+                                                                                <span class="contact-title">Name:</span>
+                                                                                <input type="text" id="visitorname" required="required">
+                                                                            </div>
+                                                                            <div>
+                                                                                <span class="contact-title">Phone:</span>
+                                                                                <input type="text" id="phone" required="required">
+                                                                            </div>
+                                                                            <div>
+                                                                                <span class="contact-title">Address:</span>
+                                                                                <input type="text" id="address" required="required">
+                                                                            </div>
+                                                                            <div>
+                                                                                <span class="contact-title">Vaccination:</span>
+                                                                                <input type="radio" name="vaccination" value="1" checked="checked"> Yes
+                                                                                <input type="radio" name="vaccination" value="0"> No
+                                                                            </div>
+                                                                            <div>
+                                                                                <input type="submit" value="submit" onclick="apply()">
+                                                                                <input type="reset" value="cancel">
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>

@@ -5,6 +5,8 @@ import cn.cy.core.FaceRegistration;
 import cn.cy.core.FaceUser;
 import cn.cy.domain.Image;
 import cn.cy.domain.Result;
+import cn.cy.domain.User;
+import cn.cy.mapper.UserMapper;
 import cn.cy.service.FaceRegister;
 import com.baidu.aip.face.AipFace;
 import org.json.JSONArray;
@@ -20,15 +22,25 @@ public class FaceRegisterImp implements FaceRegister {
     FaceRegistration faceRegistration;
     @Autowired
     FaceUser faceUser;
+    @Autowired
+    UserMapper userMapper;
     @Override
-    public Result register(Image image) {
+    public Result register(Image image, User user) {
         Result message = new Result();
         if(!search(image)) {
             JSONObject result = faceRegister(image,aiFaceObject.GROUP_LIST);
             int error_code = result.getInt("error_code");
-            if (error_code == 0){//注册成功
+            if (error_code == 0){ //注册成功
                 message.setStart(true);
                 message.setMsg("Registration success");
+                //
+                try {
+                    userMapper.save(user);
+                    System.out.println("save user");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    System.out.println(e.getMessage());
+                }
             }else if (error_code==222202){
                 message.setStart(false);
                 message.setErrorMsg("Please put your face in front of the camera");
@@ -38,7 +50,7 @@ public class FaceRegisterImp implements FaceRegister {
             }
         }else {
             message.setStart(false);
-            message.setErrorMsg("The face data has already registerred");
+            message.setErrorMsg("The face data has already registered");
         }
         return message;
     }

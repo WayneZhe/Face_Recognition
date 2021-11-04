@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cy.mapper.UserMapper">
+    <select id="findAll" resultType="User">
+        select * from user
+    </select>
+    <select id="findById" resultType="User">
+        select * from user where id = # {id}
+    </select>
+    <select id="findByName" resultType="User">
+        select * from user where name = #{username}
+    </select>
+    <insert id="save">
+        insert into user(imgId,username,phone,address,vaccination) values (#{imgId},#{username},#{phone},#{address},#{vaccination})
+    </insert>
+</mapper>

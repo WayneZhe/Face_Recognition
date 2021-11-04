@@ -27,3 +27,32 @@ $('#global_nav_groups_link').click(function() {
     $('.visitors').siblings().attr('style', 'display:none')
 })
 
+//
+
+// visitor application
+function apply() {
+    const visitorname = $('#visitorname').val();
+    const phone = $('#phone').val();
+    const address = $('#address').val();
+    const vaccination = $('input:radio[name="vaccination"]:checked').val();
+
+    $.ajax({
+        type:"POST",
+        url:"http://localhost:8080/visitor/application",
+        dataType: "text",
+        data: {
+            visitorname: visitorname,
+            phone: phone,
+            address: address,
+            vaccination: vaccination
+        },
+        success: function (data) {
+            console.log("Applicatioin success");
+            console.log(data);
+        },
+        error: function (jqXHR) {
+            console.log("ERROR："+jqXHR.status);
+        },
+        async:true
+    })
+}

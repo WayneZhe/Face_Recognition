@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cy.mapper.VisitorMapper">
+    <select id="findAll" resultType="Visitor">
+        select * from visitor
+    </select>
+    <select id="findById" resultType="Visitor">
+        select * from visitor where id = # {id}
+    </select>
+    <select id="findByName" resultType="Visitor">
+        select * from visitor where name = #{visitorname}
+    </select>
+    <insert id="save">
+        insert into visitor(visitorname, phone, address, vaccination) values (#{visitorname},#{phone},#{address},#{vaccination})
+    </insert>
+</mapper>

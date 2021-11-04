@@ -29,13 +29,14 @@ public class UserController {
         Result result = faceSearch.faceLogin(image);
         user.setUserId(result.getUserId());
         session.setAttribute("user",user);
+
         return result;
     }
 
     @RequestMapping("/register")
     @ResponseBody
-    public Result register(Image image){
-        Result result = faceRegister.register(image);
+    public Result register(Image image, User user){
+        Result result = faceRegister.register(image, user);
         return result;
     }
 }
