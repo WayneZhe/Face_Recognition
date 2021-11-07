@@ -9,8 +9,8 @@ import java.util.List;
 @Repository
 @Mapper
 public interface UserMapper {
+    Integer insert(User user);
     List<User> findAll();
-    User findById(int id);
-    User findByName(String name);
-    void save(User user);
+    User findByUserName(String username);
+    User findByUserId(String userId);
 }

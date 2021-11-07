@@ -26,27 +26,39 @@ public class FaceRegisterImp implements FaceRegister {
     UserMapper userMapper;
     @Override
     public Result register(Image image, User user) {
+        System.out.println("=================");
+        System.out.println(user);
+        System.out.println("=================");
         Result message = new Result();
         if(!search(image)) {
             JSONObject result = faceRegister(image,aiFaceObject.GROUP_LIST);
             int error_code = result.getInt("error_code");
             if (error_code == 0){ //注册成功
-                message.setStart(true);
-                message.setMsg("Registration success");
                 //
                 try {
-                    userMapper.save(user);
-                    System.out.println("save user");
+                    Integer id = userMapper.insert(user);
+                    if(id != 0) {
+                        System.out.println("insert user");
+                        message.setStart(true);
+                        message.setMsg("Registration success");
+                    }
+
                 } catch (Exception e) {
                     e.printStackTrace();
                     System.out.println(e.getMessage());
                 }
+                //message.setStart(true);
+                //message.setMsg("Registration success");
             }else if (error_code==222202){
                 message.setStart(false);
                 message.setErrorMsg("Please put your face in front of the camera");
-            }else {
+            }else if (error_code == 223114) {
                 message.setStart(false);
-                message.setErrorMsg("Error code"+result.getInt("error_code"));
+                message.setErrorMsg("face is fuzzy, please try again");
+            }
+            else {
+                message.setStart(false);
+                message.setErrorMsg("Error code "+result.getInt("error_code"));
             }
         }else {
             message.setStart(false);

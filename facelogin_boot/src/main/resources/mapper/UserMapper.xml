@@ -3,15 +3,15 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.cy.mapper.UserMapper">
     <select id="findAll" resultType="User">
-        select * from user
+        select * from users
     </select>
-    <select id="findById" resultType="User">
-        select * from user where id = # {id}
+    <select id="findByUserId" resultType="User">
+        select * from users where userId = #{userId}
     </select>
-    <select id="findByName" resultType="User">
-        select * from user where name = #{username}
+    <select id="findByUserName" resultType="User">
+        select * from users where username = #{username}
     </select>
-    <insert id="save">
-        insert into user(imgId,username,phone,address,vaccination) values (#{imgId},#{username},#{phone},#{address},#{vaccination})
+    <insert id="insert">
+        insert into users (userId,username,password,phone,address,vaccination,role) values (#{userId},#{username},#{password},#{phone},#{address},#{vaccination},#{role})
     </insert>
 </mapper>

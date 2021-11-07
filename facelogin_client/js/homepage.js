@@ -27,7 +27,47 @@ $('#global_nav_groups_link').click(function() {
     $('.visitors').siblings().attr('style', 'display:none')
 })
 
-//
+// user information
+$(document).ready(function() {
+    var userId = window.location.search.substring(1).split("?")[0]
+    // console.log(userId)
+    $.ajax({
+        type:"POST",
+        url:"http://localhost:8080/user/showinfo",
+        dataType: "JSON",
+        data: {
+            userId: userId
+        },
+        success: function (data) {
+            console.log("show user information success");
+            console.log(data);
+            $("#user-profile-name").html(data['username'])
+
+            if(data['role'] == 0) {
+                $("#identity").html('Student')
+            } else  if(data['role'] == 1) {
+                $("#identity").html('Researcher')
+            } else if(data['role'] == 2) {
+                $("#identity").html('Lecturer')
+            } else if(data['role'] == 3) {
+                $("#identity").html('Cleaner')
+            }
+
+            $("#phone-number").text(data['phone'])
+            $("#mail-address").text(data['address'])
+
+            if(data['vaccination'] == 1) {
+                $("#vaccination").text('Yes')
+            } else  {
+                $("#vaccination").text('No')
+            }
+        },
+        error: function (jqXHR) {
+            console.log("ERROR："+jqXHR.status);
+        },
+        async:true
+    })
+})
 
 // visitor application
 function apply() {
@@ -49,6 +89,7 @@ function apply() {
         success: function (data) {
             console.log("Applicatioin success");
             console.log(data);
+            alert(visitorname + " applicatioin success ")
         },
         error: function (jqXHR) {
             console.log("ERROR："+jqXHR.status);

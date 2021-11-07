@@ -9,7 +9,7 @@
         select * from visitor where id = # {id}
     </select>
     <select id="findByName" resultType="Visitor">
-        select * from visitor where name = #{visitorname}
+        select * from visitor where visitorname = #{visitorname}
     </select>
     <insert id="save">
         insert into visitor(visitorname, phone, address, vaccination) values (#{visitorname},#{phone},#{address},#{vaccination})

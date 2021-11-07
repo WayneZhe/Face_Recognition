@@ -20,8 +20,8 @@ function Facelogin() {
                 // }
                 var start = data["start"]
                 if(start == true){  // login success
-                	// alert("用户id:"+data["userId"]+"登录"+data["msg"])
-                    window.location.href ="../facelogin_client/homepage.html?"+data['userId']
+                	alert("user id: "+data["userId"]+" login "+data["msg"])
+                    window.location.href ="../facelogin_client/homepage.html?" + data["userId"];
                 }
                 else{
                 	console.log(data["errorMsg"])
