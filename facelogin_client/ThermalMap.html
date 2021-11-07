@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heatmaps</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="css/heatMap.css" />
+    <script src="js/heatMap.js"></script>
+</head>
+<body>
+<div id="floating-panel">
+    <button id="toggle-heatmap">Toggle Heatmap</button>
+    <button id="change-gradient">Change gradient</button>
+    <button id="change-radius">Change radius</button>
+    <button id="change-opacity">Change opacity</button>
+    <button id="refresh" onclick="myrefresh()">Refresh</button>
+</div>
+<div id="map"></div>
+<!--<script>-->
+<!--    function update() {-->
+<!--        setInterval(map, 5000);-->
+<!--    }-->
+<!--</script>-->
+<script language="JavaScript">
+    function myrefresh()
+    {
+        window.location.reload();
+    }
+    //setTimeout('myrefresh()',10000); //指定1秒刷新一次
+</script>
+
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFrnqIjWHNYjeP4drTTN5eDG4yWYG7qfY&callback=initMap&libraries=visualization&v=weekly"
+        async
+></script>
+</body>
+</html>
