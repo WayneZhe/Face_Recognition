@@ -1,52 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Campus Safety</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/homepage.css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/sidebar.css" rel="stylesheet">
     <link href="css/mmc-chat.css" rel="stylesheet">
-    <link href="css/themify-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<!--  header  -->
-<div class="header">
-    <div class="pull-left">
-        <div class="logo">
-            <a href="">
-                <img id="logoImg" src="img/USYD.jpg" data-logo_big="img/USYD.jpg" alt="USYD">
-            </a>
-        </div>
-        <div class="hamburger sidebar-toggle">
-            <span class="ti-menu"></span>
-        </div>
-    </div>
-</div>
-<!-- sidebar   -->
-<div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
-    <div class="nano has-scrollbar">
-        <div class="nano-content" style="right: -12px;">
-            <ul>
-                <li><a href="app-profile.html"><i class="ti-user"></i> Profile</a></li>
-                <li><a href="app-widget-card.html"><i class="ti-layout-grid2-alt"></i> Distribution</a></li>
-                <li><a href="form-basic.html"><i class="ti-view-list-alt"></i> Clock in </a></li>
-                <li><a href="form-basic.html"><i class="ti-view-list-alt"></i> Visitors </a></li>
-                <li><a><i class="ti-close"></i> Logout</a></li>
-            </ul>
-        </div>
-        <div class="nano-pane" style="display: none;">
-            <div class="nano-slider" style="height: 3898px; transform: translate(0px, 0px);"></div>
+<div class="row">
+    <div class="card">
+        <div class="stat-widget-two">
+            <div class="stat-content">
+                <div class="stat-text">Today Visitor</div>
+                <div class="stat-digit"> 500</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+            </div>
         </div>
     </div>
 </div>
-<!--  content  -->
-<div class="content-wrap">
-    <div class="main">
-
+<!--                                            -->
+<div class="row">
+    <div class="col-lg-4">
+        <div class="user-photo m-b-30">
+            <img class="img-responsive" src="img/profile.jpg" alt="profile">
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="custom-tab user-profile-tab">
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active">
+                    <div class="contact-information">
+                        <h2>Application</h2>
+                        <div>
+                            <div>
+                                <span class="contact-title">Name:</span>
+                                <input type="text" id="visitorname" required="required">
+                            </div>
+                            <div>
+                                <span class="contact-title">Phone:</span>
+                                <input type="text" id="phone" required="required">
+                            </div>
+                            <div>
+                                <span class="contact-title">Address:</span>
+                                <input type="text" id="address" required="required">
+                            </div>
+                            <div>
+                                <span class="contact-title">Vaccination:</span>
+                                <input type="radio" name="vaccination" value="1" checked="checked"> Yes
+                                <input type="radio" name="vaccination" value="0"> No
+                            </div>
+                            <div>
+                                <input type="submit" value="submit" onclick="apply()">
+                                <input type="reset" value="cancel">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
-<!--sidebar-->
-<script src="js/bootstrap.min.js"></script>
-</html>
