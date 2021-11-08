@@ -5,16 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b993b15-e470-43c4-a5e9-54b46cd13781" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/facelogin_client/USYD-Graphic1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facelogin_client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facelogin_client/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/register.html" afterDir="false" />
     </list>
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/visitorpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/visitorpage.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> wayne
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+>>>>>>> wayne
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -25,13 +45,25 @@
         <option name="userSettingsFile" value="E:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="204u1euvvkEKe7zqNQmJ2WiHZMO" />
   <component name="ProjectLevelVcsManager">
+<<<<<<< HEAD
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+=======
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+>>>>>>> wayne
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -39,12 +71,66 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\AUoS\ELEC5620\Assignment2\Face_Recognition\facelogin_client\img" />
+    </key>
+  </component>
+<<<<<<< HEAD
   <component name="RunManager">
+=======
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FaceloginBootApplication">
+    <configuration name="UserMapperTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="facelogin_boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.cy.facelogin_boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.cy.facelogin_boot" />
+      <option name="MAIN_CLASS_NAME" value="cn.cy.facelogin_boot.UserMapperTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.sessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="facelogin_boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.cy.facelogin_boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.cy.facelogin_boot" />
+      <option name="MAIN_CLASS_NAME" value="cn.cy.facelogin_boot.UserMapperTest" />
+      <option name="METHOD_NAME" value="sessionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> wayne
     <configuration name="FaceloginBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="facelogin_boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.FaceloginBootApplication" />
@@ -52,6 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserMapperTest.sessionTest" />
+        <item itemvalue="JUnit.UserMapperTest.insert" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -67,13 +159,49 @@
       <workItem from="1635317906062" duration="7391000" />
       <workItem from="1635380470436" duration="856000" />
       <workItem from="1635383393723" duration="639000" />
+      <workItem from="1635398766334" duration="2260000" />
+      <workItem from="1635430823278" duration="103000" />
+      <workItem from="1635431105768" duration="96000" />
+      <workItem from="1635562799359" duration="12281000" />
+      <workItem from="1635599975030" duration="11455000" />
+      <workItem from="1635615989711" duration="90000" />
+      <workItem from="1635648321617" duration="4776000" />
+      <workItem from="1635732900663" duration="724000" />
+      <workItem from="1635931953265" duration="7568000" />
+      <workItem from="1635948471804" duration="14256000" />
+      <workItem from="1635985016039" duration="2912000" />
+      <workItem from="1635988014160" duration="116000" />
+      <workItem from="1636251997945" duration="17208000" />
+      <workItem from="1636299760455" duration="88000" />
+      <workItem from="1636301810584" duration="944000" />
+      <workItem from="1636341288952" duration="1494000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> wayne
   </component>
 </project>

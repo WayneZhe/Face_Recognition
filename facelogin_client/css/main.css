@@ -3,11 +3,10 @@ html {
 }
 
 
-
 .centerdiv {
 	position: relative;
 	/*border: 1px solid red;*/
-	border: ;
+	border: 1px;
 	margin: 0;
 	padding: 0;
 	height: 100%;

@@ -11,9 +11,17 @@ function Facelogin() {
             dataType:"json",
             success:function (data) {
                 console.log(data);
+                //{
+                //     "start": true,
+                //     "userId": "wzh4827",
+                //     "msg": "Success",
+                //     "faceNum": 0,
+                //     "errorMsg": null
+                // }
                 var start = data["start"]
                 if(start == true){  // login success
-                	alert("用户id:"+data["userId"]+"登录"+data["msg"])
+                	alert("user id: "+data["userId"]+" login "+data["msg"])
+                    window.location.href ="../facelogin_client/homepage.html?" + data["userId"];
                 }
                 else{
                 	console.log(data["errorMsg"])

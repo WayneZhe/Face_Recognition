@@ -67,8 +67,42 @@
 		<h1 class="title">Account Registration via Baidu Face Recognition</h1>
 		<h2 style="text-align: center;">Please use your student ID as the registration ID</h2>
 		<h2 style="text-align: center;">Please put your face in front of the camera</h2>
-		<input style="display:block;margin:0 auto" type="text" name="imgId" id="imgId" value="" placeholder="Please type in SID"/>
+<!--		<input style="display:block;margin:0 auto" type="text" name="imgId" id="imgId" value="" placeholder="Please type in SID"/>-->
 		<div class="login-div cen">
+			<div class="form-inline">
+				<div>
+					<label class="col-sm-2 control-label">User ID</label>
+					<input class="form-control" name="imgId" id="imgId" value="" placeholder="input user id"/>
+				</div>
+				<div>
+					<label class="col-sm-2 control-label">Name</label>
+					<input class="form-control" name="username" id="username" value="" placeholder="input user name"/>
+				</div>
+				<div>
+					<label class="col-sm-2 control-label">Password</label>
+					<input class="form-control" type="password" name="psw" id="psw" value="" placeholder="input user password"/>
+				</div>
+				<div>
+					<label class="col-sm-2 control-label">Phone</label>
+					<input class="form-control" name="phone" id="phone" value="" placeholder="input user phone"/>
+				</div>
+				<div>
+					<label class="col-sm-2 control-label">Address</label>
+					<input class="form-control" name="address" id="address" value="" placeholder="input user address"/>
+				</div>
+				<div>
+					<label class="col-sm-2 control-label">Vaccination</label>
+					<input type="radio" name="vaccination" value="1" checked="checked"> Yes
+					<input type="radio" name="vaccination" value="0"> No
+				</div>
+				<div>
+					<label class="col-sm-2 control-label">Role</label>
+					<input type="radio" name="role" value="0" checked="checked"> Student
+					<input type="radio" name="role" value="1"> Researcher
+					<input type="radio" name="role" value="2"> Lecturer
+					<input type="radio" name="role" value="3"> Cleaner
+				</div>
+			</div>
 			<div id="face-box">
 				<video id="video"></video>
 			</div>
@@ -77,16 +111,16 @@
 			</div>
 			<div style="display: none;">
 				<canvas id="canvas"></canvas>
+
 			</div>
 		</div>
-		<!--</form>-->
 	</div>
 	<br />
 	<br />
-	<div1 style="text-align: center">
+	<div style="text-align: center">
 		<button id="register" type="button" class="button button1"/>Register</button>
 		<a href="index.html" type="button" class="button button2">Login</a>
-	</div1>
+	</div>
 </div>
 </body>
 <script type="text/javascript" src="jquery-3.3.1/jquery-3.3.1.min.js" ></script>

@@ -5,6 +5,8 @@ import cn.cy.core.FaceRegistration;
 import cn.cy.core.FaceUser;
 import cn.cy.domain.Image;
 import cn.cy.domain.Result;
+import cn.cy.domain.User;
+import cn.cy.mapper.UserMapper;
 import cn.cy.service.FaceRegister;
 import com.baidu.aip.face.AipFace;
 import org.json.JSONArray;
@@ -20,25 +22,47 @@ public class FaceRegisterImp implements FaceRegister {
     FaceRegistration faceRegistration;
     @Autowired
     FaceUser faceUser;
+    @Autowired
+    UserMapper userMapper;
     @Override
-    public Result register(Image image) {
+    public Result register(Image image, User user) {
+        System.out.println("=================");
+        System.out.println(user);
+        System.out.println("=================");
         Result message = new Result();
         if(!search(image)) {
             JSONObject result = faceRegister(image,aiFaceObject.GROUP_LIST);
             int error_code = result.getInt("error_code");
-            if (error_code == 0){//注册成功
-                message.setStart(true);
-                message.setMsg("Registration success");
+            if (error_code == 0){ //注册成功
+                //
+                try {
+                    Integer id = userMapper.insert(user);
+                    if(id != 0) {
+                        System.out.println("insert user");
+                        message.setStart(true);
+                        message.setMsg("Registration success");
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    System.out.println(e.getMessage());
+                }
+                //message.setStart(true);
+                //message.setMsg("Registration success");
             }else if (error_code==222202){
                 message.setStart(false);
                 message.setErrorMsg("Please put your face in front of the camera");
-            }else {
+            }else if (error_code == 223114) {
                 message.setStart(false);
-                message.setErrorMsg("Error code"+result.getInt("error_code"));
+                message.setErrorMsg("face is fuzzy, please try again");
+            }
+            else {
+                message.setStart(false);
+                message.setErrorMsg("Error code "+result.getInt("error_code"));
             }
         }else {
             message.setStart(false);
-            message.setErrorMsg("The face data has already registerred");
+            message.setErrorMsg("The face data has already registered");
         }
         return message;
     }
