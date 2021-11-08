@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b993b15-e470-43c4-a5e9-54b46cd13781" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facelogin_boot/src/test/java/cn/cy/facelogin_boot/UserMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/service/imp/FaceRegisterImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_boot/src/main/java/cn/cy/service/imp/FaceRegisterImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_boot/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_boot/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_boot/src/main/resources/mapper/VisitorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_boot/src/main/resources/mapper/VisitorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_boot/src/test/java/cn/cy/facelogin_boot/FaceloginBootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_boot/src/test/java/cn/cy/facelogin_boot/FaceloginBootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facelogin_client/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facelogin_client/js/LoginAjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/js/LoginAjax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/js/RegisterAjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/js/RegisterAjax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/js/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/js/homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,10 +64,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -71,7 +86,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.FaceloginBootApplication">
+    <configuration name="UserMapperTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="facelogin_boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.cy.facelogin_boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.cy.facelogin_boot" />
+      <option name="MAIN_CLASS_NAME" value="cn.cy.facelogin_boot.UserMapperTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.sessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="facelogin_boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.cy.facelogin_boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.cy.facelogin_boot" />
+      <option name="MAIN_CLASS_NAME" value="cn.cy.facelogin_boot.UserMapperTest" />
+      <option name="METHOD_NAME" value="sessionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FaceloginBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="facelogin_boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.FaceloginBootApplication" />
@@ -79,6 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserMapperTest.sessionTest" />
+        <item itemvalue="JUnit.UserMapperTest.insert" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -101,6 +154,13 @@
       <workItem from="1635599975030" duration="11455000" />
       <workItem from="1635615989711" duration="90000" />
       <workItem from="1635648321617" duration="4776000" />
+      <workItem from="1635732900663" duration="724000" />
+      <workItem from="1635931953265" duration="7568000" />
+      <workItem from="1635948471804" duration="14256000" />
+      <workItem from="1635985016039" duration="2912000" />
+      <workItem from="1635988014160" duration="116000" />
+      <workItem from="1636251997945" duration="17208000" />
+      <workItem from="1636299760455" duration="88000" />
     </task>
     <servers />
   </component>
