@@ -7,10 +7,7 @@
     <list default="true" id="0b993b15-e470-43c4-a5e9-54b46cd13781" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facelogin_client/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facelogin_client/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facelogin_client/js/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/js/homepage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facelogin_client/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facelogin_client/visitorpage.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -156,10 +153,6 @@
       <workItem from="1636299760455" duration="88000" />
       <workItem from="1636301810584" duration="944000" />
       <workItem from="1636341288952" duration="1494000" />
-      <workItem from="1636421867486" duration="9919000" />
-      <workItem from="1636506850011" duration="2151000" />
-      <workItem from="1636512292259" duration="3624000" />
-      <workItem from="1636516271110" duration="43000" />
     </task>
     <servers />
   </component>
