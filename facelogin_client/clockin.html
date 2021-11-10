@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock in</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-select/dist/css/bootstrap-select.css">
+    <style>
+        img {
+            width: 150px;
+            height: auto;
+        }
+        #location {
+            font-weight: normal;
+            width: 80px;
+            text-align: center;
+        }
+        #chart {
+            margin-top: 50px;
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div id="clock">
+    <img id="sel_img" src="img/profile.jpg" alt="profile" class="img-rounded">
+
+    <label id="location">Location: </label>
+    <select name="location" id="sel_loc" class="selectpicker">
+        <option>Academy</option>
+        <option>Laboratory</option>
+        <option>Library</option>
+        <option>Canteen</option>
+        <option>Dormitory</option>
+    </select>
+    <button id="clock-in" type="button" class="btn btn-primary">Clock in</button>
+    <button id="clock-out" type="button" class="btn btn-secondary">Clock out</button>
+</div>
+<div id="chart">
+
+</div>
+</body>
+<script type="text/javascript" src="jquery-3.3.1/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="bootstrap-select/js/bootstrap-select.js" ></script>
+<script src="js/echarts.js"></script>
+<script>
+    var myChart = echarts.init(document.getElementById("chart"));
+    var option = {
+        title: {
+            text: 'Building capacity'
+        },
+        tooltip: {},
+        legend: {
+            data:['Number of people']
+        },
+        xAxis: {
+            data: ["Academy","Laboratory","Library","Canteen","Dormitory"]
+        },
+        yAxis: {},
+        series: [{
+            name: 'Building capacity',
+            type: 'bar',
+            data: [5, 10, 7, 5, 0]
+        }]
+    };
+    myChart.setOption(option);
+
+    function scanFace() {
+
+    };
+
+    function clockIn() {
+        const selected = $('.filter-option-inner-inner').text();
+        const dataList = option.series[0].data;
+        const disable = $('#sel_loc').attr('disabled');
+        if(disable) {
+            $('#sel_loc').removeAttr("disabled");
+            if(selected === "Academy") {
+                dataList[0] -= 1;
+                myChart.setOption(option);
+            } else if(selected === "Laboratory") {
+                dataList[1] -= 1;
+                myChart.setOption(option);
+            } else if(selected === "Library") {
+                dataList[2] -= 1;
+                myChart.setOption(option);
+            } else if(selected === "Canteen") {
+                dataList[3] -= 1;
+                myChart.setOption(option);
+            } else {
+                dataList[4] -= 1;
+                myChart.setOption(option);
+            }
+        } else {
+            alert("You haven't clocked in yet...");
+        }
+    };
+
+    function clockOut() {
+        const selected = $('.filter-option-inner-inner').text();
+        const dataList = option.series[0].data;
+        const disable = $('#sel_loc').attr('disabled');
+        if(disable) {
+            alert('You have clocked in...')
+        } else {
+            $('#sel_loc').attr("disabled","disabled");
+            if(selected === "Academy") {
+                dataList[0] += 1;
+                myChart.setOption(option);
+            } else if(selected === "Laboratory") {
+                dataList[1] += 1;
+                myChart.setOption(option);
+            } else if(selected === "Library") {
+                dataList[2] += 1;
+                myChart.setOption(option);
+            } else if(selected === "Canteen") {
+                dataList[3] += 1;
+                myChart.setOption(option);
+            } else {
+                dataList[4] += 1;
+                myChart.setOption(option);
+            }
+        }
+        // console.log(option.series[0].data);
+    }
+
+    $(function () {
+        $('select').selectpicker();
+        $('#clock-out').click(function() {
+            clockIn();
+        })
+        $('#clock-in').click(function () {
+            clockOut()
+        })
+    });
+</script>
+</html>

@@ -17,11 +17,12 @@ html {
 	margin: auto auto;
 	/*border: 1px solid black;*/
 	height: 300px;
-	width: 300px;
+	width: 500px;
 }
 
 #face-box {
 	/*border: 1px solid deepskyblue;*/
+	margin-left: 100px;
 	background: royalblue;
 	height: 300px;
 	width: 300px;
@@ -37,9 +38,9 @@ html {
 
 .title{
 	text-align: center;
-	color: darkturquoise;
+	/*color: darkturquoise;*/
 }
-#register{
-	display:block;
-	margin:0 auto
-}
+/*#register{*/
+/*	display:block;*/
+/*	margin:0 auto*/
+/*}*/

@@ -27,6 +27,11 @@ $('#global_nav_groups_link').click(function() {
     $('.visitors').siblings().attr('style', 'display:none')
 })
 
+$('#global_nav_help_link').click(function() {
+    alert('User logout...')
+    window.location.href ="../facelogin_client/register.html";
+})
+
 // user information
 $(document).ready(function() {
     var userId = window.location.search.substring(1).split("?")[0]
@@ -89,6 +94,7 @@ function apply() {
         success: function (data) {
             console.log("Applicatioin success");
             console.log(data);
+            reset();
             alert(visitorname + " applicatioin success ")
         },
         error: function (jqXHR) {
@@ -96,4 +102,11 @@ function apply() {
         },
         async:true
     })
+}
+
+function reset() {
+    $('#visitorname').val("");
+    $('#phone').val("");
+    $('#address').val("");
+    $('input:radio[name="vaccination"]').get(0).checked=true;
 }

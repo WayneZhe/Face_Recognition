@@ -5,36 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b993b15-e470-43c4-a5e9-54b46cd13781" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/facelogin_client/USYD-Graphic1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facelogin_client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facelogin_client/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/register.html" afterDir="false" />
-    </list>
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/facelogin_client/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facelogin_client/visitorpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/visitorpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/js/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/js/homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/facelogin_client/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facelogin_client/visitorpage.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
->>>>>>> wayne
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
-=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
->>>>>>> wayne
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -53,17 +45,10 @@
   </component>
   <component name="ProjectId" id="204u1euvvkEKe7zqNQmJ2WiHZMO" />
   <component name="ProjectLevelVcsManager">
-<<<<<<< HEAD
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-=======
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
->>>>>>> wayne
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -82,9 +67,6 @@
       <recent name="E:\AUoS\ELEC5620\Assignment2\Face_Recognition\facelogin_client\img" />
     </key>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager">
-=======
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -130,7 +112,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
->>>>>>> wayne
     <configuration name="FaceloginBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="facelogin_boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.FaceloginBootApplication" />
@@ -175,16 +156,16 @@
       <workItem from="1636299760455" duration="88000" />
       <workItem from="1636301810584" duration="944000" />
       <workItem from="1636341288952" duration="1494000" />
+      <workItem from="1636421867486" duration="9919000" />
+      <workItem from="1636506850011" duration="2151000" />
+      <workItem from="1636512292259" duration="3624000" />
+      <workItem from="1636516271110" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-<<<<<<< HEAD
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-=======
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -202,6 +183,5 @@
         </entry>
       </map>
     </option>
->>>>>>> wayne
   </component>
 </project>

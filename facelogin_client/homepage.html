@@ -79,6 +79,22 @@
                                     <div class="menu-item__text">Vistors</div>
                                 </a>
                             </li>
+
+                            <li class="ic-app-header__menu-list-item">
+                                <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link"
+                                   data-track-category="help system" data-track-label="help button"
+                                   href="#">
+                                    <div class="menu-item-icon-container" role="presentation">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                             class="ic-icon-svg menu-item__icon svg-icon-information" x="0" y="0"
+                                             viewBox="0 0 200 200" enable-background="new 0 0 200 200"
+                                             xml:space="preserve" fill="currentColor"><path d="M94.42,139h11.15V105.58H94.42ZM83.27,150.19V94.42h33.46v55.76ZM100,72.12A11.15,11.15,0,1,1,111.15,61,11.16,11.16,0,0,1,100,72.12Zm0-33.46A22.31,22.31,0,1,0,122.31,61,22.33,22.33,0,0,0,100,38.66M100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65"></path></svg>
+
+                                        <span class="menu-item__badge"></span>
+                                    </div>
+                                    <div class="menu-item__text">Logout</div>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -88,7 +104,7 @@
                 <div id="content-wrapper" class="ic-Layout-contentWrapper">
                     <div id="content" class="ic-Layout-contentMain" role="main">
                         <div class="main-content">
-<!--                            content-->
+                            <!--                            content-->
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="card alert">
@@ -98,7 +114,8 @@
                                                 <div class="row">
                                                     <div class="col-lg-4">
                                                         <div class="user-photo m-b-30">
-                                                            <img class="img-responsive" src="img/profile.jpg" alt="profile">
+                                                            <img class="img-responsive" src="img/profile.jpg"
+                                                                 alt="profile">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-8">
@@ -114,15 +131,18 @@
                                                                         </div>
                                                                         <div class="phone-content">
                                                                             <span class="contact-title">Phone:</span>
-                                                                            <span class="phone-number" id="phone-number"></span>
+                                                                            <span class="phone-number"
+                                                                                  id="phone-number"></span>
                                                                         </div>
                                                                         <div class="address-content">
                                                                             <span class="contact-title">Address:</span>
-                                                                            <span class="mail-address" id="mail-address"></span>
+                                                                            <span class="mail-address"
+                                                                                  id="mail-address"></span>
                                                                         </div>
                                                                         <div class="vaccination-content">
                                                                             <span class="contact-title">Vaccinated:</span>
-                                                                            <span class="vaccination" id="vaccination"></span>
+                                                                            <span class="vaccination"
+                                                                                  id="vaccination"></span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -134,12 +154,14 @@
                                             <!--profile-end-->
                                             <!--distribution-->
                                             <div class="distribution" style="display: none">
-                                                <iframe src="ThermalMap.html" frameborder="0" width="100%" height="600px" scrolling="no"></iframe>
+                                                <iframe src="ThermalMap.html" frameborder="0" width="100%"
+                                                        height="700px" scrolling="no"></iframe>
                                             </div>
                                             <!--distribution-end-->
                                             <!--clock in -->
                                             <div class="clockin" style="display: none">
-                                                clock in
+                                                <iframe src="clockin.html" frameborder="0" width="100%" height="700px"
+                                                        scrolling="no"></iframe>
                                             </div>
                                             <!--clock in end -->
                                             <!--visitors-->
@@ -152,7 +174,10 @@
                                                                 <div class="stat-digit"> 500</div>
                                                             </div>
                                                             <div class="progress">
-                                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                                                                <div class="progress-bar progress-bar-danger"
+                                                                     role="progressbar" aria-valuenow="50"
+                                                                     aria-valuemin="0" aria-valuemax="100"
+                                                                     style="width: 50%;"></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -161,7 +186,8 @@
                                                 <div class="row">
                                                     <div class="col-lg-4">
                                                         <div class="user-photo m-b-30">
-                                                            <img class="img-responsive" src="img/profile.jpg" alt="profile">
+                                                            <img class="img-responsive" src="img/profile.jpg"
+                                                                 alt="profile">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-8">
@@ -173,24 +199,31 @@
                                                                         <div>
                                                                             <div>
                                                                                 <span class="contact-title">Name:</span>
-                                                                                <input type="text" id="visitorname" required="required">
+                                                                                <input type="text" id="visitorname"
+                                                                                       required="required">
                                                                             </div>
                                                                             <div>
                                                                                 <span class="contact-title">Phone:</span>
-                                                                                <input type="text" id="phone" required="required">
+                                                                                <input type="text" id="phone"
+                                                                                       required="required">
                                                                             </div>
                                                                             <div>
                                                                                 <span class="contact-title">Address:</span>
-                                                                                <input type="text" id="address" required="required">
+                                                                                <input type="text" id="address"
+                                                                                       required="required">
                                                                             </div>
                                                                             <div>
                                                                                 <span class="contact-title">Vaccination:</span>
-                                                                                <input type="radio" name="vaccination" value="1" checked="checked"> Yes
-                                                                                <input type="radio" name="vaccination" value="0"> No
+                                                                                <input type="radio" name="vaccination"
+                                                                                       value="1" checked="checked"> Yes
+                                                                                <input type="radio" name="vaccination"
+                                                                                       value="0"> No
                                                                             </div>
                                                                             <div>
-                                                                                <input type="submit" value="submit" onclick="apply()">
-                                                                                <input type="reset" value="cancel">
+                                                                                <input type="submit" value="submit"
+                                                                                       onclick="apply()">
+                                                                                <input type="reset" value="cancel"
+                                                                                       onclick="reset()">
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -205,7 +238,7 @@
                                     </div>
                                 </div>
                             </div>
-<!--                            content-end-->
+                            <!--                            content-end-->
                         </div>
                     </div>
                 </div>
@@ -214,6 +247,6 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="jquery-3.3.1/jquery-3.3.1.min.js" ></script>
-<script type="text/javascript" src="js/homepage.js" ></script>
+<script type="text/javascript" src="jquery-3.3.1/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/homepage.js"></script>
 </html>
